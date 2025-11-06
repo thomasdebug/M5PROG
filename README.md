@@ -18,8 +18,12 @@ ik heb met action events dit gemaakt
 [script](Assets/Scripts/2/Pickup.cs)
 [script](Assets/Scripts/2/PlayerController.cs)
 [script](Assets/Scripts/2/Scoreboard.cs)
-
-
+# OPDR 3A : Wat veroorzaakt de bugs?
+1 = de shotrange staat op 0
+2 = de player is verkeert gespeeld in de code
+# OPDR 3B : Vastleggen van Mythe bugs
+![Foto](Issue.png)
+# OPDR 3C : Breakpoints
 
 
 
