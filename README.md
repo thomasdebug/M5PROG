@@ -30,9 +30,13 @@ https://github.com/thomasdebug/TowerDefense
 # OPDR 4 & 5 : DRY en SRP
 hier kan je de code zien en het prototype
 https://github.com/thomasdebug/Space48
-# OPDR 6 : OOP & Inheritance
-
-
+# OPDR 6 : OOP Inheritance
+ik heb deze opdracht niet kunnen afmaken maar hier zijn de scripts waar ik mee bezig was
+[script](Assets/Scripts/6/Brute.cs)
+[script](Assets/Scripts/6/EnemyParent.cs)
+# OPDR 7 : OOP Encapsulation
+i had helaas niet elke variable kunnen zetten naar private kunnen zetten en ik was er deze les er niet dus dat is jammer.
+https://github.com/thomasdebug/TowerDefense
 
 
 
