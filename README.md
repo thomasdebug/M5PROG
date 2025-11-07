@@ -27,8 +27,10 @@ ik heb met action events dit gemaakt
 ![Foto](Breakpoints.png)
 # OPDR 3D : Bijhouden bugs voor Towerdefense
 https://github.com/thomasdebug/TowerDefense
-
-
+# OPDR 4 & 5 : DRY en SRP
+hier kan je de code zien en het prototype
+https://github.com/thomasdebug/Space48
+# OPDR 6 : OOP & Inheritance
 
 
 
