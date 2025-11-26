@@ -37,9 +37,124 @@ ik heb deze opdracht niet kunnen afmaken maar hier zijn de scripts waar ik mee b
 # OPDR 7 : OOP Encapsulation
 i had helaas niet elke variable kunnen zetten naar private kunnen zetten en ik was er deze les er niet dus dat is jammer.
 https://github.com/thomasdebug/TowerDefense
+# M6 : OPDR1
 
+# M6 : OPDR2
+``` mermaid
+---
+Title : ClassDiagram TowerDefense
+---
 
+classDiagram
 
+class Menu {
+    - TextMeshProUGUI currencyUI
+    - Animator anim
+    - bool isMenuOpen
+    + ToggleMenu()
+    - OnGui()
+}
+
+class Turret {
+    + string name
+    + int cost
+    + GameObject prefab
+    + Turret()
+}
+
+class TowerPlacement{
+    - SpriteRenderer sr
+    - Color hoverColor
+    - GameObject Tower
+    - Color startColor
+    - OnMouseEnter()
+    - OnMouseExit()
+    - OnMouseDown()
+}
+
+class Tower {
+    - Transform towerRotationPoint
+    - LayerMask enemyMask
+    - GameObject bulletPrefab
+    - Transform firingPoint
+    - float targetingRange
+    - float rotationSpeed
+    - float bps
+    - Transform target
+    - float timeUntilFire
+    - Shoot()
+    - FindTarget()
+    - CheckTargetIsInRange()
+    - RotateTowardsTarget()
+    - OnDrawGizmosSelected()
+}
+
+class Bullet {
+    - Rigidbody2D rb
+    - float bulletSpeed
+    - int bulletDamage
+    - Transform target
+    + SetTarget()
+    + OnCollisionEnter2D(Collision2D collision)
+}
+
+class LevelManager {
+    + static LevelManager main
+    + Transform startPoint
+    + Transform[] path
+    + int currency
+    + IncreaseCurrency(int amount)
+    + SpendCurrency(int amount)
+}
+
+class BuildManager {
+    + static BuildManager main
+    - Turret[] turrets
+    - int selectedTower
+    + GetSelectedTower()
+    + SetSelectedTower(int _selectedTower)
+}
+
+class Health {
+    - int hitPoints
+    - int currencyWorth
+    - bool isDestroyed
+    + TakeDamage(int dmg)
+}
+
+class EnemySpawner {
+    + UnityEvent onEnemyDestroy
+    - GameObject[] enemyPrefabs
+    - int baseEnemies
+    - float enemiesPerSecond
+    - float timeBetweenWaves
+    - float difficultyScalingFactor
+    - int currentWave
+    - float timeSinceLastSpawn
+    - int enemiesAlive
+    - int enemiesLeftToSpawn
+    - bool isSpawning
+    - EnemyDestroyed()
+    - SpawnEnemy()
+    - StartWave()
+    - EndWave()
+    - EnemiesPerWave()
+}
+
+class EnemyMovement{
+    - Rigidbody2D rb
+    - float moveSpeed
+    - Transform target
+    - int pathIndex
+}
+
+Menu ..> LevelManager
+EnemyMovement ..> LevelManager
+EnemySpawner ..> Health
+Tower ..> Bullet
+TowerPlacement ..> Tower
+Turret ..> BuildManager
+```
 
 
 
