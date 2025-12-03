@@ -37,9 +37,10 @@ ik heb deze opdracht niet kunnen afmaken maar hier zijn de scripts waar ik mee b
 # OPDR 7 : OOP Encapsulation
 i had helaas niet elke variable kunnen zetten naar private kunnen zetten en ik was er deze les er niet dus dat is jammer.
 https://github.com/thomasdebug/TowerDefense
-# M6 : OPDR1
+# M6 : OPDR1 : Code Conventions
 
-# M6 : OPDR2
+# M6 : OPDR2 : Class Diagrams
+hier is de link naar de TowerDefense https://github.com/thomasdebug/TowerDefense
 ``` mermaid
 ---
 Title : ClassDiagram TowerDefense
@@ -155,7 +156,12 @@ Tower ..> Bullet
 TowerPlacement ..> Tower
 Turret ..> BuildManager
 ```
-
-
-
+# M6 : Data Structures
+ik heb hier data structures gebruikt zoals enums, classes en structs
+![Gif](M6OPDR3.gif)
+[Script](Assets/Scripts/M6-3/Inventory.cs)
+[Script](Assets/Scripts/M6-3/Items.cs)
+[Script](Assets/Scripts/M6-3/ItemStats.cs)
+[Script](Assets/Scripts/M6-3/ItemType.cs)
+[Script](Assets/Scripts/M6-3/ItemsTemplate.cs)
 [def]: OPDR1.3.gif
