@@ -164,4 +164,5 @@ ik heb hier data structures gebruikt zoals enums, classes en structs
 [Script](Assets/Scripts/M6-3/ItemStats.cs)
 [Script](Assets/Scripts/M6-3/ItemType.cs)
 [Script](Assets/Scripts/M6-3/ItemsTemplate.cs)
-[def]: OPDR1.3.gif
+# M6 : Early Returns
+[Script](Collectable.cs)
