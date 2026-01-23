@@ -38,7 +38,7 @@ ik heb deze opdracht niet kunnen afmaken maar hier zijn de scripts waar ik mee b
 i had helaas niet elke variable kunnen zetten naar private kunnen zetten en ik was er deze les er niet dus dat is jammer.
 https://github.com/thomasdebug/TowerDefense
 # M6 : OPDR1 : Code Conventions
-
+ik heb code conventions gebruikt op een van mijn scripts van BO ik hoop dat u dit goed genoeg vind [CodeConventions](Assets/Scripts/M6-1/Code%20Conv.cs)
 # M6 : OPDR2 : Class Diagrams
 hier is de link naar de TowerDefense https://github.com/thomasdebug/TowerDefense
 ``` mermaid
