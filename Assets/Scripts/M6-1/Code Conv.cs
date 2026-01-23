@@ -4,7 +4,7 @@ public class CodeConv : MonoBehaviour
 {
     [SerializeField] public int health = 100;
     [SerializeField] private GameObject _deadEnemy;
-    [SerializeField] EnemyDetection _enemyDetection;
+    //[SerializeField] EnemyDetection _enemyDetection;
     private GameObject[] _enemy;
     private float _knockBackTime = 0f;
     enum State
@@ -16,7 +16,7 @@ public class CodeConv : MonoBehaviour
     void Start()
     {
         State state = State.Alive;
-        Damage.damageDealt += TakeDamage;
+        //Damage.damageDealt += TakeDamage;
     }
 
     // Update is called once per frame
@@ -27,11 +27,11 @@ public class CodeConv : MonoBehaviour
 
     private void TakeDamage(int damage)
     {
-        _health -= damage;
-        if (_health <= 0)
+        health -= damage;
+        if (health <= 0)
         {
             _deadEnemy.transform.position = transform.position;
-            Vector3 direction = _enemyDetection._player.transform.position - transform.position;
+            //Vector3 direction = _enemyDetection._player.transform.position - transform.position;
             _enemy = GameObject.FindGameObjectsWithTag("Enemy");
             State state = State.Dead;
             foreach (var i in _enemy)
@@ -40,7 +40,7 @@ public class CodeConv : MonoBehaviour
             }
             if (_knockBackTime <= 0.2)
             {
-                _deadEnemy.transform.position += -direction.normalized * 10f;
+                //_deadEnemy.transform.position += -direction.normalized * 10f;
                 _knockBackTime += Time.deltaTime;
             }
             Instantiate(_deadEnemy);

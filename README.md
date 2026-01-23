@@ -164,5 +164,9 @@ ik heb hier data structures gebruikt zoals enums, classes en structs
 [Script](Assets/Scripts/M6-3/ItemStats.cs)
 [Script](Assets/Scripts/M6-3/ItemType.cs)
 [Script](Assets/Scripts/M6-3/ItemsTemplate.cs)
+# M6 : Polymorphisme
+ik heb hier polymorphisme gebruikt om een text based attack system te creeren
+![Gif](OPDRM6.gif)
+[Phoenix](Assets/Scripts/M6-6/Phoenix.cs)
 # M6 : Early Returns
 [Script](Collectable.cs)
